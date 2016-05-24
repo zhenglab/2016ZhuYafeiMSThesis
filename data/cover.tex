@@ -1,0 +1,305 @@
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+% 中国海洋大学研究生学位论文封面
+% 参考：中国海洋大学研究生学位论文书写格式20130307.doc
+
+% 为避免出现错误，下面保留［清华大学学位论文模板原有定义无需修改］，
+% 请直接跳到后面［中国海洋大学学位论文模板部分请根据自己情况修改］。
+
+%%%%%%%%%%%%%%%%%%%%%%［清华大学学位论文模板原有定义无需修改］%%%%%%%%%%%%%%%%%%%%%%%
+\secretlevel{绝密} \secretyear{2100}
+
+\ctitle{清华大学学位论文 \LaTeX\ 模板\\使用示例文档}
+% 根据自己的情况选，不用这样复杂
+\makeatletter
+\ifthu@bachelor\relax\else
+  \ifthu@doctor
+    \cdegree{工学博士}
+  \else
+    \ifthu@master
+      \cdegree{工学硕士}
+    \fi
+  \fi
+\fi
+\makeatother
+
+
+\cdepartment[计算机]{计算机科学与技术系}
+\cmajor{计算机科学与技术}
+\cauthor{薛瑞尼} 
+\csupervisor{郑纬民教授}
+% 如果没有副指导老师或者联合指导老师，把下面两行相应的删除即可。
+\cassosupervisor{陈文光教授}
+\ccosupervisor{某某某教授}
+% 日期自动生成，如果你要自己写就改这个cdate
+%\cdate{\CJKdigits{\the\year}年\CJKnumber{\the\month}月}
+
+% 博士后部分
+% \cfirstdiscipline{计算机科学与技术}
+% \cseconddiscipline{系统结构}
+% \postdoctordate{2009年7月——2011年7月}
+
+\etitle{An Introduction to \LaTeX{} Thesis Template of Tsinghua University} 
+% 这块比较复杂，需要分情况讨论：
+% 1. 学术型硕士
+%    \edegree：必须为Master of Arts或Master of Science（注意大小写）
+%              “哲学、文学、历史学、法学、教育学、艺术学门类，公共管理学科
+%               填写Master of Arts，其它填写Master of Science”
+%    \emajor：“获得一级学科授权的学科填写一级学科名称，其它填写二级学科名称”
+% 2. 专业型硕士
+%    \edegree：“填写专业学位英文名称全称”
+%    \emajor：“工程硕士填写工程领域，其它专业学位不填写此项”
+% 3. 学术型博士
+%    \edegree：Doctor of Philosophy（注意大小写）
+%    \emajor：“获得一级学科授权的学科填写一级学科名称，其它填写二级学科名称”
+% 4. 专业型博士
+%    \edegree：“填写专业学位英文名称全称”
+%    \emajor：不填写此项
+\edegree{Doctor of Engineering} 
+\emajor{Computer Science and Technology} 
+\eauthor{Xue Ruini} 
+\esupervisor{Professor Zheng Weimin} 
+\eassosupervisor{Chen Wenguang} 
+% 这个日期也会自动生成，你要改么？
+% \edate{December, 2005}
+
+% 定义中英文摘要和关键字
+\begin{cabstract}
+  论文的摘要是对论文研究内容和成果的高度概括。摘要应对论文所研究的问题及其研究目
+  的进行描述，对研究方法和过程进行简单介绍，对研究成果和所得结论进行概括。摘要应
+  具有独立性和自明性，其内容应包含与论文全文同等量的主要信息。使读者即使不阅读全
+  文，通过摘要就能了解论文的总体内容和主要成果。
+
+  论文摘要的书写应力求精确、简明。切忌写成对论文书写内容进行提要的形式，尤其要避
+  免“第 1 章……；第 2 章……；……”这种或类似的陈述方式。
+
+  本文介绍清华大学论文模板 \thuthesis{} 的使用方法。本模板符合学校的本科、硕士、
+  博士论文格式要求。
+
+  本文的创新点主要有：
+  \begin{itemize}
+    \item 用例子来解释模板的使用方法；
+    \item 用废话来填充无关紧要的部分；
+    \item 一边学习摸索一边编写新代码。
+  \end{itemize}
+
+  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。关键词不超过 5
+  个，每个关键词中间用分号分隔。（模板作者注：关键词分隔符不用考虑，模板会自动处
+  理。英文关键词同理。）
+\end{cabstract}
+
+\ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}
+
+\begin{eabstract} 
+   An abstract of a dissertation is a summary and extraction of research work
+   and contributions. Included in an abstract should be description of research
+   topic and research objective, brief introduction to methodology and research
+   process, and summarization of conclusion and contributions of the
+   research. An abstract should be characterized by independence and clarity and
+   carry identical information with the dissertation. It should be such that the
+   general idea and major contributions of the dissertation are conveyed without
+   reading the dissertation. 
+
+   An abstract should be concise and to the point. It is a misunderstanding to
+   make an abstract an outline of the dissertation and words ``the first
+   chapter'', ``the second chapter'' and the like should be avoided in the
+   abstract.
+
+   Key words are terms used in a dissertation for indexing, reflecting core
+   information of the dissertation. An abstract may contain a maximum of 5 key
+   words, with semi-colons used in between to separate one another.
+\end{eabstract}
+
+\ekeywords{\TeX, \LaTeX, CJK, template, thesis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%［中国海洋大学学位论文模板部分请根据自己情况修改］%%%%%%%%%%%%%%%%%%%
+% 中国海洋大学研究生学位论文封面
+% 必须填写的内容包括（其他最好不要修改）：
+%   分类号、密级、UDC
+%   论文中文题目、作者中文姓名
+%   论文答辩时间
+%   封面感谢语
+%   论文英文题目
+%   中文摘要、中文关键词
+%   英文摘要、英文关键词
+%
+%%%%%［自定义］%%%%%
+\newcommand{\fenleihao}{}%分类号
+\newcommand{\miji}{}%密级 
+                    % 绝密$\bigstar$20年 
+                    % 机密$\bigstar$10年
+                    % 秘密$\bigstar$5年
+\newcommand{\UDC}{}%UDC
+\newcommand{\oucctitle}{基于多特征多分类器组合的海洋浮游动物图像\protect\\分类研究}%论文中文题目
+\ctitle{基于多特征多分类器组合的海洋浮游动物图像分类研究}%必须修改因为页眉中用到
+\cauthor{朱亚菲}%可以选择修改因为仅在 pdf 文档信息中用到
+\cdegree{工学硕士}%可以选择修改因为仅在 pdf 文档信息中用到
+\ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}%可以选择修改因为仅在 pdf 文档信息中用到
+\newcommand{\ouccauthor}{朱亚菲}%作者中文姓名
+%\newcommand{\ouccauthor}{***}%外审时用到
+%\newcommand{\ouccsupervisor}{姬光荣教授}%作者导师中文姓名
+%\newcommand{\ouccdegree}{博\hspace{1em}士}%作者申请学位级别
+%\newcommand{\ouccmajor}{海洋信息探测与处理}%作者专业名称
+%\newcommand{\ouccdateday}{\CJKdigits{\the\year}年\CJKnumber{\the\month}月\CJKnumber{\the\day}日}
+%\newcommand{\ouccdate}{\CJKdigits{\the\year}年\CJKnumber{\the\month}月}
+\newcommand{\oucdatedefense}{           }%论文答辩时间
+%\newcommand{\oucdatedegree}{2009年6月}%学位授予时间
+\newcommand{\oucgratitude}{谨以此论文献给我的导师和亲人！}%封面感谢语
+\newcommand{\oucetitle}{Marine zooplankton image classification based on combination of multiple features and multiple classifiers}%论文英文题目
+%\newcommand{\ouceauthor}{Haiyong Zheng}%作者英文姓名
+\newcommand{\oucthesis}{\textsc{OUCThesis}}
+%%%%%默认自定义命令%%%%%
+% 空下划线定义
+\newcommand{\oucblankunderline}[1]{\rule[-2pt]{#1}{.7pt}}
+\newcommand{\oucunderline}[2]{\underline{\hskip #1 #2 \hskip#1}}
+
+% 论文封面第一页
+%%不需要改动%%
+\vspace*{5cm}
+{\xiaoer\heiti\oucgratitude
+
+\begin{flushright}
+---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---~\ouccauthor
+\end{flushright}
+}
+
+%\begin{comment}
+
+\newpage 
+%\mbox{} 
+%\newpage
+
+% 论文封面第二页
+%%不需要改动%%
+\vspace*{1cm}
+\begin{center}
+  {\xiaoer\heiti\oucctitle}
+\end{center}
+\vspace{10.7cm}
+{\normalsize\songti
+\begin{flushright}
+{\renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{r@{}l}
+    学位论文答辩日期：~ & \oucunderline{2.5cm}{\oucdatedefense} \\
+    指导教师签字：~ & \oucblankunderline{5cm} \\
+    答辩委员会成员签字：~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+  \end{tabular}
+}
+\end{flushright}
+}
+
+\newpage 
+%\mbox{} 
+%\newpage
+
+% 论文封面第三页
+%%不需要改动%%
+\vspace*{1cm}
+\begin{center}
+  {\xiaosan\heiti 独\hspace{1em}创\hspace{1em}声\hspace{1em}明}
+\end{center}
+\par{\normalsize\songti\parindent2em
+本人声明所呈交的学位论文是本人在导师指导下进行的研究工作及取得的研究成果。据我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写过的研究成果，也不包含未获得~\oucblankunderline{7cm}（注：如没有其他需要特别声明的，本栏可空）或其他教育机构的学位或证书使用过的材料。与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示谢意。
+}
+\vskip1.5cm
+\begin{flushright}{\normalsize\songti
+  学位论文作者签名：\hskip2cm 签字日期：\hskip1cm 年 \hskip0.7cm 月\hskip0.7cm 日}
+\end{flushright}
+\vskip.5cm
+{\setlength{\unitlength}{0.1\textwidth}
+  \begin{picture}(10, 0.1)
+    \multiput(0,0)(0.2, 0){50}{\rule{0.15\unitlength}{.5pt}}
+  \end{picture}}
+\vskip1cm
+\begin{center}
+  {\xiaosan\heiti 学位论文版权使用授权书}
+\end{center}
+\par{\normalsize\songti\parindent2em
+本学位论文作者完全了解学校有关保留、使用学位论文的规定，并同意以下事项：
+\begin{enumerate}
+\item 学校有权保留并向国家有关部门或机构送交论文的复印件和磁盘，允许论文被查阅和借阅。
+\item 学校可以将学位论文的全部或部分内容编入有关数据库进行检索，可以采用影印、缩印或扫描等复制手段保存、汇编学位论文。同时授权清华大学“中国学术期刊(光盘版)电子杂志社”用于出版和编入CNKI《中国知识资源总库》，授权中国科学技术信息研究所将本学位论文收录到《中国学位论文全文数据库》。
+\end{enumerate}
+（保密的学位论文在解密后适用本授权书）
+}
+\vskip1.5cm
+{\parindent0pt\normalsize\songti
+学位论文作者签名：\hskip4.2cm\relax%
+导师签字：\relax\hspace*{1.2cm}\\
+签字日期：\hskip1cm 年\hskip0.7cm 月\hskip0.7cm 日\relax\hfill%
+签字日期：\hskip1cm 年\hskip0.7cm 月\hskip0.7cm 日\relax\hspace*{1.2cm}}
+
+%\end{comment}
+
+\newpage 
+%\mbox{} 
+%\newpage
+
+\pagestyle{plain}
+\clearpage\pagenumbering{roman}
+
+% 中文摘要
+%%［需要填写：中文摘要、中文关键词］%%
+\begin{center}
+  {\sanhao[1.5]\heiti\oucctitle\\\vskip7pt 摘\hspace{1em}要}
+\end{center}
+{\normalsize\songti
+
+  \indent
+海洋覆盖了地球上约70\%左右的面积，对人类有着重要而深远的影响，能够为人类创造巨大的经济、社会、环境效益。海洋生态系统是一个结构复杂的大系统，浮游动物是其中的重要一员，其生物量、种群结构以及群落多样性对海洋生态系统、海洋生物地球化学循环、海洋环境以及全球气候变化研究都起着重要的作用。
+
+随着浮游生物光学成像系统的不断发展，海量的浮游动物图像资料涌现出来，为浮游动物的监测和分类带来了挑战。本论文主要针对浮游动物图像分类技术中的特征提取和分类器设计两个关键步骤进行了分析和研究，提出了一种基于多特征多分类器组合的浮游动物图像分类方法，主要研究工作如下：
+
+\begin{enumerate}
+\item 以混淆矩阵中的分类准确率指标作为评价函数，对由图像处理领域常用特征、各种分类竞赛中采用的经典特征、浮游动物形态特征等组成的特征集进行特征选择，最终挑选出适用于浮游动物图像的三类特征，分别为PkID软件中的22个特征、局部二值模式特征、内距离形状上下文特征。
+\item 对于挑选出的三类特征，分别对其采用不同的分类算法进行分类，将分类结果用交叉验证方法进行评价，根据评价结果挑选出适用于每类特征的分类算法，得到三个分类器。
+\item 单个分类器对浮游动物图像分类可能存在一定的片面性，分类性能不能达到最佳，对此，我们提出了一种基于多特征多分类器组合的浮游动物图像分类方法，从而能够综合不同分类器的信息，提高分类准确率。
+\end{enumerate}
+
+我们在包含13类浮游动物的数据集上进行了对比实验，证明了本文的算法与其它浮游动物分类方法相比在分类准确率上有明显的提高，对于浮游动物分类是有效和可行的。
+}
+\vskip12bp
+{\xiaosi\heiti\noindent
+关键词：\hskip1em 海洋浮游动物； 图像分类； 机器学习； 多特征多分类器组合}
+
+\newpage 
+%\mbox{} 
+%\newpage
+
+% 英文摘要
+%%［需要填写：英文摘要、英文关键词］%%
+\begin{center}
+  {\sanhao[1.5]\heiti\oucetitle\\\vskip7pt Abstract}
+\end{center}
+{\normalsize\songti
+
+The ocean occupies about 70\% of the earth surface, producing significant economic, social and environmental benefits for human beings. Marine ecosystem is a complicated system,  in which zooplankton is an important member. Marine zooplankton biomass, population structure and community diversity play an important role in marine ecosystems, marine biogeochemical cycles, marine environment and global climate change research.
+
+With the development of marine plankton optical imaging system, a tremendous amount of zooplankton images sprang up, which challenges the monitoring and classification of zooplankton. The thesis mainly focuses on the feature extraction and classifier design steps in zooplankton image classification, presenting a new zooplankton image classification method based on combination of multiple features and multiple classifiers.  Main tasks are as follows:
+
+\begin{enumerate}
+\item The classification accuracy indicator of confusion matrix is taken as the evaluation function for feature selection from the feature sets, which is composed of the most frequently used features in image processing fields, classic features in various classification competitions and zooplankton configuration features. We finally select three suitable types of features for zooplankton images: 22 features in PkID, local binary pattern and inner-distance shape context.
+\item For each of the three types of features we choose, we apply different classification algorithm for it, and then use cross validation for evaluation. According to the evaluation results, we can select the most proper classification algorithm for each feature type and achieve three classifiers.
+\item Single classifier for zooplankton classification has some certain one-sidedness, and the classification performance may not get the best. We propose a method based on combination of multiple features and multiple classifiers, thus can combine the information of different classifiers and improve the performance.
+\end{enumerate}
+
+The performance comparison on zooplankton dataset with 13 categories validates that the proposed method has an obvious increasement on classification accuracy compared with other methods in zooplankton image identification. It is feasible and effective in zooplankton classification.
+}
+\vskip12bp
+{\xiaosi\heiti\noindent 
+\textbf{Keywords:\enskip marine zooplankton, image classification, machine learning, combination of multiple features and multiple classifiers}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage 
+%\mbox{} 
+%\newpage
